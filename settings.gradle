@@ -8,11 +8,7 @@ dependencyResolutionManagement {
             url uri("https://applitools.jfrog.io/artifactory/Android")
         }
         maven {
-            url "https://applitools.jfrog.io/artifactory/ufg-android"
-            credentials {
-                username = System.getenv("ANDROID_UFG_BETA_USERNAME").toString()
-                password = System.getenv("ANDROID_UFG_BETA_PASSWORD").toString()
-            }
+            url uri("https://applitools.jfrog.io/artifactory/nmg/android/nmg_lib")
         }
     }
 }
